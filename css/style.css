@@ -34,11 +34,13 @@ body{background:#000}
 
 }
 .navbar a{
-	color: #15ea3c;
+	color: #f1f2f1;
 }
+
+
 .container{
 	background-color: #05050c;
-	color: #15ea3c;
+	color: #0be60b;
 }
 
 #intro .jumbotron .container{
@@ -50,7 +52,7 @@ body{background:#000}
 	margin-top: 20px;
 }
 .btn{
-    background-color: #f05f5c;
+    background-color: #33c336;
     padding: 7px 28px;
     border-radius: 20px;
     border: none;
@@ -80,7 +82,7 @@ body{background:#000}
 p{
 	font-size: 16px;
     line-height: 26px;
-    color: #169c07;
+    color: #2bf11d;
 }
 p.lead{
 	color: rgb(15, 185, 12);

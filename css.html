@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .emtext { color:red}
+        .linda{color:#0eac55}
+        .mary{color:black}
+        .paul{color:red}
+        #latest{color:blue}
+        h1,h2,h3,h4{
+            font-family:'Courier New', Courier, monospace;
+            color: blue;
+        } 
+        p,a,span,li,label{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:#0eac55
+        }
+        /* 通用選擇器  有標籤已標為主*/
+        *{color:red}
+
+        div{ color:rgb(7, 14, 14)}
+        div[title] {color:red;}
+        div[title=fishbecat]{color:#0eac55;}
+        div[title~=fishbecat′s] {color:blue;}
+
+        a {color:black}
+        h1 a {color:red}
+        #wrapper a {color:green}
+
+        h1{color:red}
+        /* h1+p 隔壁行套用 */
+        h1 + p {color:#0eac55} 
+
+        p{color:rgba(252,186,3,0.8);
+            font-size:40px;
+            letter-spacing: 10px;
+            line-height: 1.5;
+            font-weight: 500;
+            text-align:right;/*left ,center*/
+            font-family: '標楷體', sans-serif;
+           }
+        div {
+            font-family:Arial,'Times New Roman','Microsoft YaHei'; font:bold 12px/0.75em Arial,'Times New Roman','Microsoft YaHei';
+            font-size:40px;
+            line-height: 1.5;
+            }
+          
+          /*全部設定字體*/
+        body { font-family: verdana, Times New Roman, 新細明體, 微軟正黑體; }
+
+        atticle > p {color:blue;}
+        .mary > p {color:blueviolet;}
+        #wa > p {color: aqua;}
+        /* div各種設定 */
+        div {
+            background: red;
+            width: 200px;
+            height: 200px;
+            overflow:hidden;
+            border:5px solid black;
+            padding:50px 10px 20px 40px;
+            margin:50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p class="emtext">1</p>
+    <!-- 會用最靠近的標籤 -->
+    <p class="linda mary">123 黑色</p>
+    <p class="linda">123</p>
+    <p class="linda"> 123</p>
+    <p id="latest" >此段藍色</p>
+    <li><span>
+        <a href="#" target="_blank">see me to</a>
+    </span></li>
+    <h1> see me to</h1>
+
+    <div>此區塊會套用黑色</div>
+    <div title="blog">紅色</div>
+    <div title="fishbecat">綠</div>
+    <div title="fishbecat′s blog">藍色</div>
+    <br>
+
+    <a > 黑色</a>
+    <h1><a>紅色</a></h1>
+    <div class="wrapper"><a>id裡面的a套用</a></div>
+
+    <h1>紅</h1>
+    <p>綠</p>
+    <p>沒顏色</p>
+
+    <p>今天天氣很好</p>
+    <p>hellow</p>
+    <div>##########</div>
+    <div>%%%%%%%%%%%</div>
+     <!-- 個別設定字體 -->
+     <div><span style="font-family:verdana, Times New Roman,新細明體,微軟正黑體;">設定字形</span></div>
+     哇哈哈
+    
+     <article>
+        <p>PPPPPPPPP</p>
+     </article>
+     <p>AAAAAAA</p>
+     <div class="mary">
+        <p>mary</p>
+     </div>
+     <div class="wa">
+        <p>wa</p>
+     </div>
+
+     <div>HHHHHHHHHHHH</div>
+     <div>ji3ji3ji3ji3ji3ji3</div>
+    </body>
+</html>
